@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<title>Photography Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.bobby-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="bobby-sidebar bobby-black bobby-animate-top bobby-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="bobby_close()" class="bobby-button bobby-black bobby-xxlarge bobby-padding bobby-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="bobby-bar-block bobby-center">
+    <a href="#" class="bobby-bar-item bobby-button bobby-text-grey bobby-hover-black">About</a>
+    <a href="#" class="bobby-bar-item bobby-button bobby-text-grey bobby-hover-black">Photos</a>
+    <a href="#" class="bobby-bar-item bobby-button bobby-text-grey bobby-hover-black">Shop</a>
+    <a href="#" class="bobby-bar-item bobby-button bobby-text-grey bobby-hover-black">Contact</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="bobby-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="bobby-opacity">
+<span class="bobby-button bobby-xxlarge bobby-white bobby-right" onclick="bobby_open()"><i class="fa fa-bars"></i></span> 
+<div class="bobby-clear"></div>
+<header class="bobby-center bobby-margin-bottom">
+  <h1><b>Photos</b></h1>
+  <p class="bobby-padding-16"><button class="bobby-button bobby-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="bobby-row" id="myGrid" style="margin-bottom:128px">
+  <div class="bobby-third">
+    <img src="images/bg3.jpg" style="width:100%">
+    <img src="images/bg2.jpg" style="width:100%">
+    <img src="images/bg1.jpg" style="width:100%">
+    <img src="images/bg15.jpg" style="width:100%">
+    <img src="images/bg14.jpg" style="width:100%">
+    <img src="images/bg13.jpg" style="width:100%">
+  </div>
+
+  <div class="bobby-third">
+    <img src="images/bg12.jpg" style="width:100%">
+    <img src="images/bg11.jpg" style="width:100%">
+    <img src="images/bg10.jpg" style="width:100%">
+    <img src="images/bg9.jpg" style="width:100%">
+    <img src="images/bg8.jpg" style="width:100%">
+    <img src="images/bg7.jpg" style="width:100%">
+  </div>
+
+  <div class="bobby-third">
+    <img src="images/bg6.jpg" style="width:100%">
+    <img src="images/bg5.jpg" style="width:100%">
+    <img src="images/bg4.jpg" style="width:100%">
+    <img src="images/bg3.jpg" style="width:100%">
+    <img src="images/bg2.jpg" style="width:100%">
+    <img src="images/bg1.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="bobby-container bobby-padding-64 bobby-light-grey bobby-center bobby-opacity bobby-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official bobby-hover-opacity"></i>
+  <i class="fa fa-instagram bobby-hover-opacity"></i>
+  <i class="fa fa-snapchat bobby-hover-opacity"></i>
+  <i class="fa fa-pinterest-p bobby-hover-opacity"></i>
+  <i class="fa fa-twitter bobby-hover-opacity"></i>
+  <i class="fa fa-linkedin bobby-hover-opacity"></i>
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "bobby-row") {
+    x.className = "bobby-row-padding";
+  } else { 
+    x.className = x.className.replace("bobby-row-padding", "bobby-row");
+  }
+}
+
+// Open and close sidebar
+function bobby_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function bobby_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
